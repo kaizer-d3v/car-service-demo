@@ -3,30 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cyber Auto Care - Professional Car Detailing & Wash Services in Cyberjaya. Book online via WhatsApp.">
-    <title>Cyber Auto Care | Car Detailing & Wash Services</title>
+    <meta name="description" content="Choochii Car Detailing - Premium Car Care Services in Cyberjaya. Book online.">
+    <title>Choochii Car Detailing | Premium Car Care</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-left">
+                <span><i class="fas fa-phone-alt"></i> +60 12-435 8184</span>
+                <span><i class="fas fa-map-marker-alt"></i> Tamarind Square, Cyberjaya</span>
+            </div>
+            <div class="top-right">
+                <span><i class="fas fa-clock"></i> Open Daily 9AM - 7PM</span>
+            </div>
+        </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="container">
             <a href="#" class="logo">
-                <span class="logo-icon"><i class="fas fa-car"></i></span>
-                <span class="logo-text">Cyber Auto Care</span>
+                <span class="logo-rpm">RPM</span>
+                <div class="logo-text">
+                    <span class="logo-name">CHOOCHII</span>
+                    <span class="logo-sub">CAR DETAILING</span>
+                </div>
             </a>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#location">Location</a></li>
-                <li><a href="#contact" class="btn-nav">Book Now</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#work">Our Work</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
+            <a href="https://wa.me/60124358184?text=Hi%2C%20I%27d%20like%20to%20book%20a%20slot" class="btn-book-nav" target="_blank">
+                <i class="fab fa-whatsapp"></i> BOOK NOW
+            </a>
             <button class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
@@ -35,189 +54,168 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section - Full Screen Video Style -->
     <section class="hero" id="home">
-        <div class="hero-overlay"></div>
-        <div class="container">
-            <div class="hero-content">
-                <span class="hero-badge"><i class="fas fa-shield-alt"></i> Cyberjaya's Trusted Car Care</span>
-                <h1>Premium Car <span class="highlight">Detailing</span> & <span class="highlight">Wash</span> Services</h1>
-                <p class="hero-subtitle">Professional car care services in Cyberjaya. From basic wash to full ceramic coating - we treat your car like our own.</p>
-                <div class="hero-cta">
-                    <a href="https://wa.me/60124358184?text=Hi%20Cyber%20Auto%20Care%2C%20I%27d%20like%20to%20book%20a%20service" class="btn btn-whatsapp" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Book via WhatsApp
-                    </a>
-                    <a href="tel:+60124358184" class="btn btn-call">
-                        <i class="fas fa-phone"></i> Call Now
-                    </a>
+        <div class="hero-bg">
+            <div class="hero-pattern"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                CYBERJAYA'S #1 CAR DETAILING
+            </div>
+            <h1>WE MAKE YOUR CAR <span class="text-gradient">SHINE</span></h1>
+            <p class="hero-desc">Premium car detailing services with professional-grade products. From basic wash to ceramic coating - we treat your car like our own.</p>
+            <div class="hero-buttons">
+                <a href="https://wa.me/60124358184?text=Hi%2C%20I%27d%20like%20to%20book%20a%20detailing%20session" class="btn-primary" target="_blank">
+                    <i class="fab fa-whatsapp"></i> BOOK VIA WHATSAPP
+                </a>
+                <a href="#services" class="btn-outline">
+                    VIEW SERVICES <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-num" data-target="500">0</span>+
+                    <span class="stat-label">Cars Detailed</span>
                 </div>
-                <div class="hero-features">
-                    <div class="hero-feature">
-                        <i class="fas fa-clock"></i>
-                        <span>Open Daily 9am-7pm</span>
-                    </div>
-                    <div class="hero-feature">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Tamarind Square, Cyberjaya</span>
-                    </div>
-                    <div class="hero-feature">
-                        <i class="fas fa-star"></i>
-                        <span>4.8/5 Rating</span>
-                    </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num" data-target="4.9">0</span>
+                    <span class="stat-label">Google Rating</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num" data-target="3">0</span>+
+                    <span class="stat-label">Years Experience</span>
                 </div>
             </div>
         </div>
+        <div class="hero-scroll">
+            <a href="#services">
+                <span>SCROLL</span>
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Services Section - Card Grid -->
     <section class="services" id="services">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Our Services</span>
-                <h2>Professional Car Care Services</h2>
-                <p>From quick wash to full detailing, we offer comprehensive car care solutions.</p>
+            <div class="section-title">
+                <span class="title-tag">// WHAT WE OFFER</span>
+                <h2>OUR <span class="text-gradient">SERVICES</span></h2>
             </div>
             <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-number">01</div>
+                    <div class="service-icon-wrap">
                         <i class="fas fa-tint"></i>
                     </div>
-                    <h3>Basic Car Wash</h3>
-                    <p>Exterior wash with premium shampoo, tire dressing, and window cleaning.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Premium Shampoo</li>
-                        <li><i class="fas fa-check"></i> Tire Dressing</li>
-                        <li><i class="fas fa-check"></i> Window Cleaning</li>
-                        <li><i class="fas fa-check"></i> Interior Vacuum</li>
-                    </ul>
-                    <div class="service-price">RM 25</div>
-                    <div class="service-time"><i class="fas fa-clock"></i> 30 minutes</div>
-                    <a href="https://wa.me/60124358184?text=Hi%2C%20I%20want%20to%20book%20Basic%20Car%20Wash" class="btn btn-book" target="_blank">Book Now</a>
+                    <h3>BASIC WASH</h3>
+                    <p>Exterior wash with premium shampoo, tire dressing, window cleaning, and interior vacuum.</p>
+                    <div class="service-meta">
+                        <span class="service-price">RM 25</span>
+                        <span class="service-time"><i class="far fa-clock"></i> 30 min</span>
+                    </div>
+                    <a href="https://wa.me/60124358184?text=Hi%2C%20I%20want%20Basic%20Wash" class="btn-service" target="_blank">
+                        BOOK <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
 
-                <div class="service-card featured">
-                    <div class="service-badge">Most Popular</div>
-                    <div class="service-icon">
+                <div class="service-card featured" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-badge">POPULAR</div>
+                    <div class="service-number">02</div>
+                    <div class="service-icon-wrap">
                         <i class="fas fa-spray-can"></i>
                     </div>
-                    <h3>Full Interior Detailing</h3>
-                    <p>Deep clean interior with shampoo, leather conditioning, and odor treatment.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Deep Shampoo</li>
-                        <li><i class="fas fa-check"></i> Leather Conditioning</li>
-                        <li><i class="fas fa-check"></i> Dashboard Polish</li>
-                        <li><i class="fas fa-check"></i> Odor Treatment</li>
-                    </ul>
-                    <div class="service-price">RM 150</div>
-                    <div class="service-time"><i class="fas fa-clock"></i> 2-3 hours</div>
-                    <a href="https://wa.me/60124358184?text=Hi%2C%20I%20want%20to%20book%20Full%20Interior%20Detailing" class="btn btn-book" target="_blank">Book Now</a>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-sparkles"></i>
+                    <h3>INTERIOR DETAILING</h3>
+                    <p>Deep clean with shampoo, leather conditioning, dashboard polish, and odor elimination.</p>
+                    <div class="service-meta">
+                        <span class="service-price">RM 150</span>
+                        <span class="service-time"><i class="far fa-clock"></i> 2-3 hrs</span>
                     </div>
-                    <h3>Exterior Polishing</h3>
-                    <p>Paint correction and polishing to remove swirl marks and restore shine.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Paint Correction</li>
-                        <li><i class="fas fa-check"></i> Swirl Removal</li>
-                        <li><i class="fas fa-check"></i> Gloss Enhancement</li>
-                        <li><i class="fas fa-check"></i> Clear Coat Protection</li>
-                    </ul>
-                    <div class="service-price">RM 200</div>
-                    <div class="service-time"><i class="fas fa-clock"></i> 3-4 hours</div>
-                    <a href="https://wa.me/60124358184?text=Hi%2C%20I%20want%20to%20book%20Exterior%20Polishing" class="btn btn-book" target="_blank">Book Now</a>
+                    <a href="https://wa.me/60124358184?text=Hi%2C%20I%20want%20Interior%20Detailing" class="btn-service" target="_blank">
+                        BOOK <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
 
-                <div class="service-card">
-                    <div class="service-icon">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-number">03</div>
+                    <div class="service-icon-wrap">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>EXTERIOR POLISH</h3>
+                    <p>Paint correction, swirl mark removal, gloss enhancement, and clear coat protection.</p>
+                    <div class="service-meta">
+                        <span class="service-price">RM 200</span>
+                        <span class="service-time"><i class="far fa-clock"></i> 3-4 hrs</span>
+                    </div>
+                    <a href="https://wa.me/60124358184?text=Hi%2C%20I%20want%20Exterior%20Polish" class="btn-service" target="_blank">
+                        BOOK <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-number">04</div>
+                    <div class="service-icon-wrap">
                         <i class="fas fa-shield-alt"></i>
                     </div>
-                    <h3>Ceramic Coating</h3>
-                    <p>Long-lasting paint protection with hydrophobic ceramic coating technology.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> 9H Hardness</li>
-                        <li><i class="fas fa-check"></i> Hydrophobic Effect</li>
-                        <li><i class="fas fa-check"></i> UV Protection</li>
-                        <li><i class="fas fa-check"></i> 1-2 Year Durability</li>
-                    </ul>
-                    <div class="service-price">RM 450</div>
-                    <div class="service-time"><i class="fas fa-clock"></i> 4-5 hours</div>
-                    <a href="https://wa.me/60124358184?text=Hi%2C%20I%20want%20to%20book%20Ceramic%20Coating" class="btn btn-book" target="_blank">Book Now</a>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-wind"></i>
+                    <h3>CERAMIC COATING</h3>
+                    <p>9H hardness ceramic coating with hydrophobic effect and UV protection.</p>
+                    <div class="service-meta">
+                        <span class="service-price">RM 450</span>
+                        <span class="service-time"><i class="far fa-clock"></i> 4-5 hrs</span>
                     </div>
-                    <h3>Windshield Treatment</h3>
-                    <p>Glass coating and rain repellent treatment for better visibility.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Rain Repellent</li>
-                        <li><i class="fas fa-check"></i> Anti-Glare Coating</li>
-                        <li><i class="fas fa-check"></i> Water Beading</li>
-                        <li><i class="fas fa-check"></i> Improved Safety</li>
-                    </ul>
-                    <div class="service-price">RM 80</div>
-                    <div class="service-time"><i class="fas fa-clock"></i> 1 hour</div>
-                    <a href="https://wa.me/60124358184?text=Hi%2C%20I%20want%20to%20book%20Windshield%20Treatment" class="btn btn-book" target="_blank">Book Now</a>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-couch"></i>
-                    </div>
-                    <h3>Leather Restoration</h3>
-                    <p>Restore and protect leather seats with premium conditioning treatment.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Deep Cleaning</li>
-                        <li><i class="fas fa-check"></i> Color Restoration</li>
-                        <li><i class="fas fa-check"></i> UV Protection</li>
-                        <li><i class="fas fa-check"></i> Softening Treatment</li>
-                    </ul>
-                    <div class="service-price">RM 250</div>
-                    <div class="service-time"><i class="fas fa-clock"></i> 2-3 hours</div>
-                    <a href="https://wa.me/60124358184?text=Hi%2C%20I%20want%20to%20book%20Leather%20Restoration" class="btn btn-book" target="_blank">Book Now</a>
+                    <a href="https://wa.me/60124358184?text=Hi%2C%20I%20want%20Ceramic%20Coating" class="btn-service" target="_blank">
+                        BOOK <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Pricing Packages -->
-    <section class="pricing" id="pricing">
+    <!-- Packages Section - Pricing Tables -->
+    <section class="packages" id="packages">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Pricing</span>
-                <h2>Complete Packages</h2>
-                <p>Choose from our popular packages or customize your own service combination.</p>
+            <div class="section-title">
+                <span class="title-tag">// CHOOSE YOUR PLAN</span>
+                <h2>DETAILING <span class="text-gradient">PACKAGES</span></h2>
             </div>
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h3>Basic Wash</h3>
-                        <div class="price">RM 25</div>
-                        <p>Quick and clean</p>
+            <div class="packages-grid">
+                <div class="package-card">
+                    <div class="package-header">
+                        <span class="package-tier">STARTER</span>
+                        <div class="package-price">
+                            <span class="currency">RM</span>
+                            <span class="amount">25</span>
+                        </div>
+                        <span class="package-name">Basic Wash</span>
                     </div>
-                    <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> Exterior Wash</li>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> Exterior Hand Wash</li>
                         <li><i class="fas fa-check"></i> Interior Vacuum</li>
                         <li><i class="fas fa-check"></i> Window Cleaning</li>
                         <li><i class="fas fa-check"></i> Tire Dressing</li>
-                        <li class="disabled"><i class="fas fa-times"></i> Air Freshener</li>
-                        <li class="disabled"><i class="fas fa-times"></i> Dashboard Polish</li>
+                        <li class="inactive"><i class="fas fa-times"></i> Air Freshener</li>
+                        <li class="inactive"><i class="fas fa-times"></i> Dashboard Polish</li>
                     </ul>
-                    <a href="https://wa.me/60124358184?text=Hi%2C%20I%20want%20to%20book%20Basic%20Wash%20Package" class="btn btn-book" target="_blank">Book Now</a>
+                    <a href="https://wa.me/60124358184?text=Hi%2C%20I%20want%20Basic%20Wash%20Package" class="btn-package" target="_blank">
+                        SELECT PACKAGE
+                    </a>
                 </div>
 
-                <div class="pricing-card featured">
-                    <div class="pricing-badge">Best Value</div>
-                    <div class="pricing-header">
-                        <h3>Premium Detail</h3>
-                        <div class="price">RM 180</div>
-                        <p>Complete care</p>
+                <div class="package-card premium">
+                    <div class="package-badge">BEST VALUE</div>
+                    <div class="package-header">
+                        <span class="package-tier">PREMIUM</span>
+                        <div class="package-price">
+                            <span class="currency">RM</span>
+                            <span class="amount">180</span>
+                        </div>
+                        <span class="package-name">Full Detail</span>
                     </div>
-                    <ul class="pricing-features">
+                    <ul class="package-features">
                         <li><i class="fas fa-check"></i> Full Exterior Wash</li>
                         <li><i class="fas fa-check"></i> Interior Deep Clean</li>
                         <li><i class="fas fa-check"></i> Dashboard Polish</li>
@@ -225,16 +223,21 @@
                         <li><i class="fas fa-check"></i> Air Freshener</li>
                         <li><i class="fas fa-check"></i> Tire & Rim Clean</li>
                     </ul>
-                    <a href="https://wa.me/60124358184?text=Hi%2C%20I%20want%20to%20book%20Premium%20Detail%20Package" class="btn btn-book" target="_blank">Book Now</a>
+                    <a href="https://wa.me/60124358184?text=Hi%2C%20I%20want%20Premium%20Package" class="btn-package" target="_blank">
+                        SELECT PACKAGE
+                    </a>
                 </div>
 
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h3>Full Protection</h3>
-                        <div class="price">RM 550</div>
-                        <p>Maximum shine</p>
+                <div class="package-card">
+                    <div class="package-header">
+                        <span class="package-tier">ULTIMATE</span>
+                        <div class="package-price">
+                            <span class="currency">RM</span>
+                            <span class="amount">550</span>
+                        </div>
+                        <span class="package-name">Full Protection</span>
                     </div>
-                    <ul class="pricing-features">
+                    <ul class="package-features">
                         <li><i class="fas fa-check"></i> Everything in Premium</li>
                         <li><i class="fas fa-check"></i> Ceramic Coating</li>
                         <li><i class="fas fa-check"></i> Glass Treatment</li>
@@ -242,155 +245,237 @@
                         <li><i class="fas fa-check"></i> Engine Bay Clean</li>
                         <li><i class="fas fa-check"></i> 1 Year Warranty</li>
                     </ul>
-                    <a href="https://wa.me/60124358184?text=Hi%2C%20I%20want%20to%20book%20Full%20Protection%20Package" class="btn btn-book" target="_blank">Book Now</a>
+                    <a href="https://wa.me/60124358184?text=Hi%2C%20I%20want%20Ultimate%20Package" class="btn-package" target="_blank">
+                        SELECT PACKAGE
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section class="gallery" id="gallery">
+    <!-- Before/After Work Section -->
+    <section class="work" id="work">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Our Work</span>
-                <h2>Before & After Gallery</h2>
-                <p>See the difference professional detailing makes.</p>
+            <div class="section-title">
+                <span class="title-tag">// TRANSFORMATION</span>
+                <h2>BEFORE & <span class="text-gradient">AFTER</span></h2>
             </div>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <div class="gallery-placeholder">
-                        <i class="fas fa-car"></i>
-                        <span>Before: Dull Paint</span>
+            <div class="work-grid">
+                <div class="work-item">
+                    <div class="work-before">
+                        <span class="work-label">BEFORE</span>
+                        <div class="work-placeholder">
+                            <i class="fas fa-car"></i>
+                            <span>Dull & Oxidized Paint</span>
+                        </div>
+                    </div>
+                    <div class="work-after">
+                        <span class="work-label">AFTER</span>
+                        <div class="work-placeholder after">
+                            <i class="fas fa-car"></i>
+                            <span>Ceramic Coated Shine</span>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <h4>Paint Restoration</h4>
+                        <p>Full paint correction + ceramic coating</p>
                     </div>
                 </div>
-                <div class="gallery-item">
-                    <div class="gallery-placeholder after">
-                        <i class="fas fa-car"></i>
-                        <span>After: Ceramic Coating</span>
+
+                <div class="work-item">
+                    <div class="work-before">
+                        <span class="work-label">BEFORE</span>
+                        <div class="work-placeholder">
+                            <i class="fas fa-couch"></i>
+                            <span>Stained Interior</span>
+                        </div>
+                    </div>
+                    <div class="work-after">
+                        <span class="work-label">AFTER</span>
+                        <div class="work-placeholder after">
+                            <i class="fas fa-couch"></i>
+                            <span>Like New Interior</span>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <h4>Interior Detailing</h4>
+                        <p>Deep shampoo + leather conditioning</p>
                     </div>
                 </div>
-                <div class="gallery-item">
-                    <div class="gallery-placeholder">
-                        <i class="fas fa-couch"></i>
-                        <span>Before: Stained Interior</span>
+
+                <div class="work-item">
+                    <div class="work-before">
+                        <span class="work-label">BEFORE</span>
+                        <div class="work-placeholder">
+                            <i class="fas fa-circle"></i>
+                            <span>Dirty Rims & Brakes</span>
+                        </div>
                     </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-placeholder after">
-                        <i class="fas fa-couch"></i>
-                        <span>After: Deep Clean</span>
+                    <div class="work-after">
+                        <span class="work-label">AFTER</span>
+                        <div class="work-placeholder after">
+                            <i class="fas fa-circle"></i>
+                            <span>Polished & Protected</span>
+                        </div>
                     </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-placeholder">
-                        <i class="fas fa-tire"></i>
-                        <span>Before: Dirty Rims</span>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-placeholder after">
-                        <i class="fas fa-tire"></i>
-                        <span>After: Polished & Protected</span>
+                    <div class="work-info">
+                        <h4>Rim Detailing</h4>
+                        <p>Deep clean + ceramic protection</p>
                     </div>
                 </div>
             </div>
-            <p class="gallery-note"><i class="fas fa-info-circle"></i> Actual photos from our workshop in Tamarind Square, Cyberjaya</p>
         </div>
     </section>
 
-    <!-- Booking Form Section -->
-    <section class="booking" id="booking">
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Book Online</span>
-                <h2>Reserve Your Slot</h2>
-                <p>Book your appointment via WhatsApp or fill out the form below.</p>
+            <div class="section-title">
+                <span class="title-tag">// TESTIMONIALS</span>
+                <h2>WHAT CLIENTS <span class="text-gradient">SAY</span></h2>
             </div>
-            <div class="booking-container">
-                <div class="booking-info">
-                    <h3>Why Book With Us?</h3>
-                    <div class="booking-feature">
-                        <i class="fas fa-check-circle"></i>
-                        <div>
-                            <h4>Instant Confirmation</h4>
-                            <p>Get booking confirmation via WhatsApp within minutes.</p>
-                        </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
                     </div>
-                    <div class="booking-feature">
-                        <i class="fas fa-check-circle"></i>
-                        <div>
-                            <h4>Flexible Scheduling</h4>
-                            <p>Choose any time slot that works for you.</p>
+                    <p class="review-text">"Best car detailing in Cyberjaya! My Honda Civic looks brand new after the ceramic coating. The team is very professional and detail-oriented."</p>
+                    <div class="review-author">
+                        <div class="author-avatar">A</div>
+                        <div class="author-info">
+                            <strong>Ahmad F.</strong>
+                            <span>Honda Civic Owner</span>
                         </div>
-                    </div>
-                    <div class="booking-feature">
-                        <i class="fas fa-check-circle"></i>
-                        <div>
-                            <h4>No Payment Required</h4>
-                            <p>Pay only after service is completed.</p>
-                        </div>
-                    </div>
-                    <div class="booking-feature">
-                        <i class="fas fa-check-circle"></i>
-                        <div>
-                            <h4>Satisfaction Guaranteed</h4>
-                            <p>Not happy? We'll redo it for free.</p>
-                        </div>
-                    </div>
-
-                    <div class="quick-book">
-                        <h4>Quick Book via WhatsApp</h4>
-                        <a href="https://wa.me/60124358184?text=Hi%20Cyber%20Auto%20Care%2C%20I%27d%20like%20to%20book%20an%20appointment." class="btn btn-whatsapp btn-block" target="_blank">
-                            <i class="fab fa-whatsapp"></i> Open WhatsApp
-                        </a>
                     </div>
                 </div>
 
-                <div class="booking-form">
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"I've been to many car washes but Choochii is different. They take their time and the result is amazing. Highly recommended for anyone who cares about their car!"</p>
+                    <div class="review-author">
+                        <div class="author-avatar">S</div>
+                        <div class="author-info">
+                            <strong>Sarah L.</strong>
+                            <span>Toyota Camry Owner</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="review-text">"Great value for money! The premium package is worth every ringgit. My Proton X70 hasn't looked this good since I bought it. Will definitely come back!"</p>
+                    <div class="review-author">
+                        <div class="author-avatar">R</div>
+                        <div class="author-info">
+                            <strong>Raj K.</strong>
+                            <span>Proton X70 Owner</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Booking Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="section-title left">
+                        <span class="title-tag">// GET IN TOUCH</span>
+                        <h2>BOOK YOUR <span class="text-gradient">SLOT</span></h2>
+                    </div>
+                    <p class="contact-desc">Ready to make your car shine? Contact us via WhatsApp for instant booking confirmation.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <span class="contact-label">Phone / WhatsApp</span>
+                                <a href="tel:+60124358184">+60 12-435 8184</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <span class="contact-label">Location</span>
+                                <span>Level 1 Parking, Tamarind Square, Cyberjaya</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <span class="contact-label">Operating Hours</span>
+                                <span>Monday - Sunday: 9AM - 7PM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/60124358184?text=Hi%2C%20I%27d%20like%20to%20book%20a%20car%20detailing%20session" class="btn-whatsapp-lg" target="_blank">
+                        <i class="fab fa-whatsapp"></i> BOOK VIA WHATSAPP
+                    </a>
+                </div>
+
+                <div class="contact-form-wrap">
                     <form id="bookingForm">
+                        <h3>Quick Booking</h3>
                         <div class="form-row">
                             <div class="form-group">
-                                <label><i class="fas fa-user"></i> Your Name</label>
-                                <input type="text" name="name" placeholder="Enter your name" required>
+                                <label>Name</label>
+                                <input type="text" name="name" placeholder="Your name" required>
                             </div>
                             <div class="form-group">
-                                <label><i class="fas fa-phone"></i> Phone Number</label>
+                                <label>Phone</label>
                                 <input type="tel" name="phone" placeholder="012-345 6789" required>
                             </div>
                         </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label><i class="fas fa-car"></i> Car Brand</label>
-                                <input type="text" name="car_brand" placeholder="e.g. Toyota Vios" required>
-                            </div>
-                            <div class="form-group">
-                                <label><i class="fas fa-palette"></i> Car Color</label>
-                                <input type="text" name="car_color" placeholder="e.g. White" required>
-                            </div>
+                        <div class="form-group">
+                            <label>Car Details</label>
+                            <input type="text" name="car" placeholder="e.g. Toyota Vios White" required>
                         </div>
                         <div class="form-group">
-                            <label><i class="fas fa-concierge-bell"></i> Select Service</label>
+                            <label>Service</label>
                             <select name="service" required>
-                                <option value="">Choose a service...</option>
+                                <option value="">Select service...</option>
                                 <option value="Basic Wash - RM 25">Basic Wash - RM 25</option>
-                                <option value="Full Interior Detailing - RM 150">Full Interior Detailing - RM 150</option>
-                                <option value="Exterior Polishing - RM 200">Exterior Polishing - RM 200</option>
+                                <option value="Interior Detailing - RM 150">Interior Detailing - RM 150</option>
+                                <option value="Exterior Polish - RM 200">Exterior Polish - RM 200</option>
                                 <option value="Ceramic Coating - RM 450">Ceramic Coating - RM 450</option>
-                                <option value="Windshield Treatment - RM 80">Windshield Treatment - RM 80</option>
-                                <option value="Leather Restoration - RM 250">Leather Restoration - RM 250</option>
-                                <option value="Premium Detail Package - RM 180">Premium Detail Package - RM 180</option>
-                                <option value="Full Protection Package - RM 550">Full Protection Package - RM 550</option>
+                                <option value="Premium Package - RM 180">Premium Package - RM 180</option>
+                                <option value="Ultimate Package - RM 550">Ultimate Package - RM 550</option>
                             </select>
                         </div>
                         <div class="form-row">
                             <div class="form-group">
-                                <label><i class="fas fa-calendar"></i> Preferred Date</label>
+                                <label>Date</label>
                                 <input type="date" name="date" required>
                             </div>
                             <div class="form-group">
-                                <label><i class="fas fa-clock"></i> Preferred Time</label>
+                                <label>Time</label>
                                 <select name="time" required>
-                                    <option value="">Select time...</option>
+                                    <option value="">Select...</option>
                                     <option value="9:00 AM">9:00 AM</option>
                                     <option value="10:00 AM">10:00 AM</option>
                                     <option value="11:00 AM">11:00 AM</option>
@@ -404,12 +489,8 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label><i class="fas fa-comment"></i> Additional Notes (Optional)</label>
-                            <textarea name="notes" placeholder="Any special requests or areas to focus on..." rows="3"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-book btn-block">
-                            <i class="fab fa-whatsapp"></i> Book via WhatsApp
+                        <button type="submit" class="btn-submit">
+                            <i class="fab fa-whatsapp"></i> SEND BOOKING
                         </button>
                     </form>
                 </div>
@@ -417,153 +498,16 @@
         </div>
     </section>
 
-    <!-- Location Section -->
-    <section class="location" id="location">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Find Us</span>
-                <h2>Our Location</h2>
-                <p>Conveniently located at Tamarind Square, Cyberjaya.</p>
-            </div>
-            <div class="location-grid">
-                <div class="location-info">
-                    <div class="location-item">
-                        <div class="location-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div>
-                            <h4>Address</h4>
-                            <p>Level 1 Parking, Tamarind Square<br>Persiaran Multimedia, Cyber 10<br>63000 Cyberjaya, Selangor</p>
-                        </div>
-                    </div>
-                    <div class="location-item">
-                        <div class="location-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div>
-                            <h4>Phone / WhatsApp</h4>
-                            <p><a href="tel:+60124358184">+60 12-435 8184</a></p>
-                        </div>
-                    </div>
-                    <div class="location-item">
-                        <div class="location-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <div>
-                            <h4>Operating Hours</h4>
-                            <p>Monday - Sunday: 9:00 AM - 7:00 PM<br>Closed on Friday</p>
-                        </div>
-                    </div>
-                    <div class="location-item">
-                        <div class="location-icon">
-                            <i class="fas fa-parking"></i>
-                        </div>
-                        <div>
-                            <h4>Parking</h4>
-                            <p>Free parking available at Level 1</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="location-map">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.0123456789!2d101.6!3d2.92!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMgnCsDU1JzEyLjAiTiAxMDE2wrAzNicwMC4wIkU!5e0!3m2!1sen!2smy!4v1234567890" 
-                        width="100%" 
-                        height="400" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Reviews</span>
-                <h2>What Our Customers Say</h2>
-            </div>
-            <div class="testimonial-grid">
-                <div class="testimonial-card">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p>"Best car detailing in Cyberjaya! My car looks brand new after the ceramic coating service. Highly recommended!"</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div>
-                            <strong>Ahmad F.</strong>
-                            <span>Toyota Vios Owner</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p>"Very professional service. They took their time with the interior detailing and the result was amazing. Will come back!"</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div>
-                            <strong>Sarah L.</strong>
-                            <span>Honda Civic Owner</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <p>"Great value for money. The premium package is worth every ringgit. My car hasn't looked this good since I bought it!"</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div>
-                            <strong>Raj K.</strong>
-                            <span>Proton X70 Owner</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Ready to Make Your Car Shine?</h2>
-                <p>Book now and get 10% off your first service!</p>
-                <div class="cta-buttons">
-                    <a href="https://wa.me/60124358184?text=Hi%20Cyber%20Auto%20Care%2C%20I%27d%20like%20to%20book%20a%20service.%20I%20have%20a%20promo%20code%20FIRST10" class="btn btn-whatsapp" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Book Now with Promo
-                    </a>
-                    <a href="tel:+60124358184" class="btn btn-call">
-                        <i class="fas fa-phone"></i> Call to Book
-                    </a>
-                </div>
-            </div>
-        </div>
+    <!-- Map Section -->
+    <section class="map-section">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.0!2d101.6!3d2.92!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMgnCsDU1JzEyLjAiTiAxMDE2wrAzNicwMC4wIkU!5e0!3m2!1sen!2smy!4v1234567890" 
+            width="100%" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
     </section>
 
     <!-- Footer -->
@@ -571,12 +515,15 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <a href="#" class="logo">
-                        <span class="logo-icon"><i class="fas fa-car"></i></span>
-                        <span class="logo-text">Cyber Auto Care</span>
-                    </a>
-                    <p>Professional car detailing and wash services in Cyberjaya, Selangor.</p>
-                    <div class="social-links">
+                    <div class="footer-logo">
+                        <span class="logo-rpm">RPM</span>
+                        <div class="logo-text">
+                            <span class="logo-name">CHOOCHII</span>
+                            <span class="logo-sub">CAR DETAILING</span>
+                        </div>
+                    </div>
+                    <p>Premium car detailing services in Cyberjaya, Selangor.</p>
+                    <div class="footer-social">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-tiktok"></i></a>
@@ -584,47 +531,36 @@
                 </div>
                 <div class="footer-links">
                     <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#pricing">Pricing</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#location">Location</a></li>
-                    </ul>
+                    <a href="#services">Services</a>
+                    <a href="#packages">Packages</a>
+                    <a href="#work">Our Work</a>
+                    <a href="#reviews">Reviews</a>
+                    <a href="#contact">Contact</a>
                 </div>
                 <div class="footer-links">
                     <h4>Services</h4>
-                    <ul>
-                        <li><a href="#services">Basic Wash</a></li>
-                        <li><a href="#services">Interior Detailing</a></li>
-                        <li><a href="#services">Exterior Polishing</a></li>
-                        <li><a href="#services">Ceramic Coating</a></li>
-                        <li><a href="#services">Leather Restoration</a></li>
-                    </ul>
+                    <a href="#services">Basic Wash</a>
+                    <a href="#services">Interior Detailing</a>
+                    <a href="#services">Exterior Polish</a>
+                    <a href="#services">Ceramic Coating</a>
                 </div>
                 <div class="footer-contact">
                     <h4>Contact Us</h4>
-                    <p><i class="fas fa-phone"></i> <a href="tel:+60124358184">+60 12-435 8184</a></p>
-                    <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/60124358184">WhatsApp Us</a></p>
+                    <p><i class="fas fa-phone-alt"></i> <a href="tel:+60124358184">+60 12-435 8184</a></p>
+                    <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/60124358184">WhatsApp</a></p>
                     <p><i class="fas fa-map-marker-alt"></i> Tamarind Square, Cyberjaya</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Cyber Auto Care. All rights reserved.</p>
-                <p>Crafted with <i class="fas fa-heart"></i> by <a href="https://ezfaststudio.art" target="_blank">EZ Fast Studio</a></p>
+                <p>&copy; 2026 Choochii Car Detailing. All rights reserved.</p>
+                <p>Website by <a href="https://ezfaststudio.art" target="_blank">EZ Fast Studio</a></p>
             </div>
         </div>
     </footer>
 
-    <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/60124358184?text=Hi%20Cyber%20Auto%20Care%2C%20I%27d%20like%20to%20enquire%20about%20your%20services" class="whatsapp-float" target="_blank">
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/60124358184" class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
-        <span class="whatsapp-tooltip">Chat with us!</span>
-    </a>
-
-    <!-- Back to Top -->
-    <a href="#home" class="back-to-top" id="backToTop">
-        <i class="fas fa-arrow-up"></i>
     </a>
 
     <script src="script.js"></script>

@@ -1,23 +1,16 @@
 /* ============================================
-   Cyber Auto Care - JavaScript
+   Choochii Car Detailing - JavaScript
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', function() {
     // Navbar scroll effect
     const navbar = document.getElementById('navbar');
-    const backToTop = document.getElementById('backToTop');
     
     window.addEventListener('scroll', function() {
         if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
         } else {
             navbar.classList.remove('scrolled');
-        }
-        
-        if (window.scrollY > 500) {
-            backToTop.classList.add('visible');
-        } else {
-            backToTop.classList.remove('visible');
         }
     });
     
@@ -37,12 +30,47 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Set minimum date for booking to today
+    // Set minimum date for booking
     const dateInput = document.querySelector('input[name="date"]');
     if (dateInput) {
         const today = new Date().toISOString().split('T')[0];
         dateInput.setAttribute('min', today);
     }
+    
+    // Counter animation
+    const counters = document.querySelectorAll('.stat-num');
+    
+    const animateCounter = (counter) => {
+        const target = parseFloat(counter.getAttribute('data-target'));
+        const isDecimal = target % 1 !== 0;
+        const duration = 2000;
+        const increment = target / (duration / 16);
+        let current = 0;
+        
+        const updateCounter = () => {
+            current += increment;
+            if (current < target) {
+                counter.textContent = isDecimal ? current.toFixed(1) : Math.floor(current);
+                requestAnimationFrame(updateCounter);
+            } else {
+                counter.textContent = isDecimal ? target.toFixed(1) : target;
+            }
+        };
+        
+        updateCounter();
+    };
+    
+    // Intersection Observer for counters
+    const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateCounter(entry.target);
+                counterObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+    
+    counters.forEach(counter => counterObserver.observe(counter));
     
     // Booking form handling
     const bookingForm = document.getElementById('bookingForm');
@@ -54,14 +82,11 @@ document.addEventListener('DOMContentLoaded', function() {
             const formData = new FormData(this);
             const name = formData.get('name');
             const phone = formData.get('phone');
-            const carBrand = formData.get('car_brand');
-            const carColor = formData.get('car_color');
+            const car = formData.get('car');
             const service = formData.get('service');
             const date = formData.get('date');
             const time = formData.get('time');
-            const notes = formData.get('notes') || 'None';
             
-            // Format date nicely
             const dateObj = new Date(date);
             const formattedDate = dateObj.toLocaleDateString('en-MY', { 
                 weekday: 'long', 
@@ -70,8 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 day: 'numeric' 
             });
             
-            // Create WhatsApp message
-            const whatsappMessage = `Hi Cyber Auto Care! 
+            const whatsappMessage = `Hi Choochii Car Detailing!
 
 I'd like to book a car service appointment.
 
@@ -80,16 +104,12 @@ Name: ${name}
 Phone: ${phone}
 
 *Car Details:*
-Brand: ${carBrand}
-Color: ${carColor}
+${car}
 
 *Service Details:*
 Service: ${service}
 Date: ${formattedDate}
 Time: ${time}
-
-*Additional Notes:*
-${notes}
 
 Please confirm my booking. Thank you!`;
             
@@ -101,6 +121,24 @@ Please confirm my booking. Thank you!`;
         });
     }
     
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                const headerOffset = 80;
+                const elementPosition = target.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+    
     // Intersection Observer for animations
     const observerOptions = {
         threshold: 0.1,
@@ -110,32 +148,19 @@ Please confirm my booking. Thank you!`;
     const observer = new IntersectionObserver(function(entries) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('animate-in');
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
                 observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
     
-    document.querySelectorAll('.service-card, .pricing-card, .testimonial-card, .gallery-item').forEach(el => {
-        el.classList.add('animate-target');
+    document.querySelectorAll('.service-card, .package-card, .review-card, .work-item').forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(30px)';
+        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(el);
     });
     
-    // Add animation styles
-    const style = document.createElement('style');
-    style.textContent = `
-        .animate-target {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.6s ease, transform 0.6s ease;
-        }
-        
-        .animate-in {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    `;
-    document.head.appendChild(style);
-    
-    console.log('Cyber Auto Care website loaded successfully!');
+    console.log('Choochii Car Detailing website loaded!');
 });
